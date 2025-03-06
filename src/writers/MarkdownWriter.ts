@@ -188,6 +188,7 @@ export namespace MarkdownWriter {
 
       const newbie: DMMF.Model = {
         name,
+        schema: null,
         dbName: null,
         fields: [
           {
