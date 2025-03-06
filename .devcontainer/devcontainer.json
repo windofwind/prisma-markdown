@@ -1,0 +1,31 @@
+{
+  "image":"mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "[typescript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[javascript]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[prisma]": {
+          "editor.defaultFormatter": "Prisma.prisma"
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "Prisma.prisma",
+        "kduy5222.vscode-vitest-runner-pnpm"
+      ]
+    }
+  },
+  "postStartCommand": "pnpm i"
+}
